@@ -10,6 +10,11 @@ const routes: Routes = [
 
   },
   {
+    path: 'heroes',
+    loadChildren: () => import ('./heroes/heroes.module').then (m => m.HeroesModule )
+
+  },
+  {
     path: '404',
     component: ErrorPageComponent
   },
@@ -24,7 +29,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-  RouterModule.forRoot(routes)
+  RouterModule.forRoot(routes),
   ],
   exports:[
     RouterModule
