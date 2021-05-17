@@ -14,5 +14,6 @@ export class HeroeTarjetaComponent implements OnInit {
   }
 
   @Input() heroe!: Heroe
+ 
 
 }
