@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Heroe } from '../../interfaces/heroes.interface';
 
 @Component({
@@ -8,7 +9,7 @@ import { Heroe } from '../../interfaces/heroes.interface';
 })
 export class HeroeTarjetaComponent implements OnInit {
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit(): void {
   }

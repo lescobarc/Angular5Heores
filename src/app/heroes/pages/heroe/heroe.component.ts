@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Heroe } from '../../interfaces/heroes.interface';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-heroe',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroeComponent implements OnInit {
 
-  constructor() { }
+  @Input() heroe!: Heroe
+
+  constructor(private ActivatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+
+   this.ActivatedRoute.params
+   .subscribe ( ({id})=> console.log(id))
+
+
+
   }
 
 }

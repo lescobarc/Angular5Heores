@@ -7,7 +7,7 @@ import { HeroeComponent } from './pages/heroe/heroe.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 
-const routes: Routes =[
+const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
@@ -45,10 +45,10 @@ const routes: Routes =[
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forChild( routes )
+    RouterModule.forChild(routes)
   ],
-  exports:[
-   RouterModule
+  exports: [
+    RouterModule
   ]
 })
 export class HeroesRoutingModule { }
